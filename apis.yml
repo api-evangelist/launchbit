@@ -1,19 +1,52 @@
 aid: launchbit
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/launchbit.png
 name: Launchbit
-description: Launchbit is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'LaunchBit was an advertising startup founded in 2012 and incubated through 500 Startups,
+  co-founded and led by CEO Elizabeth Yin. It launched as an email ad network that let B2B and
+  software-as-a-service advertisers reach audiences through niche email newsletters, and helped
+  publishers monetize email — a medium BuySellAds founder Todd Garland described as "pretty tricky to
+  monetize." In March 2014 LaunchBit pivoted toward a customer-acquisition and lead-generation platform
+  for SaaS companies. BuySellAds.com acquired LaunchBit in September 2014 for undisclosed terms, and the
+  company no longer operates independently: as of a July 2026 probe, launchbit.com serves the BuySellAds
+  corporate website for every path. LaunchBit published no public API, developer portal, or SDKs, so this
+  profile is retained as a historical/acquired record rather than an active API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/launchbit/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: historical
+x-tier-reason: acquired-no-api-surface
+x-status: acquired
+x-acquired-by: BuySellAds
+x-acquired-date: '2014-09-17'
+x-acquisition-source: https://techcrunch.com/2014/09/17/buysellads-acquires-launchbit/
+x-successor-url: https://buysellads.com
+x-founded: '2012'
+x-domain-disposition: serves-successor-site
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Advertising
+- AdTech
+- Email Marketing
+- Lead Generation
+- Customer Acquisition
+- SaaS
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +54,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/launchbit-domain-security.yml
 - type: Website
   url: https://launchbit.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
