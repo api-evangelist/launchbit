@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://launchbit.com', status: 301, note: 'declared website redirects to https://www.buysellads.com/?utm_campaign=Launchbit&utm_source=redirect&utm_medium=redirect — a different registrable domain (launchbit.com -> buysellads.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/launchbit.png
 name: Launchbit
 description: 'LaunchBit was an advertising startup founded in 2012 and incubated through 500 Startups,
